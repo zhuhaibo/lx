@@ -1,0 +1,343 @@
+.brandAgencyDiv {
+    overflow: hidden;
+    text-align: left;
+    .selectSchoolPage {
+        .selectSchoolDiv {
+            margin: 30px 0 10px 0;
+            overflow: hidden;
+            height: 380px;
+            border-bottom: 1px solid #BCBCBC;
+            padding-bottom: 32px;
+            .selectSchoolDivLeft {
+                height: 320px;
+                width: 1000px;
+                float: left;
+                margin-right: 35px;
+                .mbxDiv {
+                    margin-bottom: 30px;
+                    .searchThisAddressIcon {
+                        color: #FFB44D;
+                        font-size: 18px; 
+                        float: left; 
+                        margin-right: 10px;
+                        margin-top: 2px;
+                    }
+                }
+                .selectSchool {
+                    .searchItem {
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        margin-bottom: 30px;
+                        .hotSchoolTbsDiv {
+                            float: left;
+                            overflow: hidden;
+                            > span {
+                                color: #ffb435;
+                            }
+                            strong {
+                                width: 60px;
+                                float: left;
+                                margin-right: 20px;
+                            }
+                            ul {
+                                width: 890px;
+                                float: left;
+                                overflow: hidden;
+                                li {
+                                    float: left;
+                                    margin-right: 10px;
+                                    border: 1px solid #FFF;
+                                    font-size: 12px;
+                                    padding: 2px 8px;
+                                    border-radius: 10px;
+                                    margin-bottom: 5px;
+                                    &:hover {
+                                        color: #1677ff;
+                                        cursor: pointer;
+                                    }
+                                }
+                                li.active {
+                                    border: 1px solid #1677ff;
+                                    color: #1677ff;
+                                }
+                                li.emptyBtn {
+                                    color: #FFF;
+                                    border: 0;
+                                    background: linear-gradient(180deg, #91CAFF 0%, #4096FF 100%);
+                                    padding: 3px 15px;
+                                    &:hover {
+                                        opacity: 0.8;
+                                    }
+                                }
+                            }
+                            :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper {
+                                border:0;
+                                border-radius: 10px;;
+                                height: 24px;
+                                line-height: 24px;
+                                padding-inline: 8px;
+                                margin-right: 10px;
+                                font-size: 12px;
+                                color: #666;
+                                margin-bottom: 5px
+                            }
+                            :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper:hover {
+                                color: #1677ff;
+                            }
+                            :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper:not(:first-child)::before {
+                                background: none;
+                            }
+                            .ant-radio-group-solid :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+                                background-color: #FFF;
+                                border: 1px solid #1677ff;
+                                color:#1677ff;
+                                line-height: 22px;
+                            }
+                            .ant-radio-group-solid :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+                                // color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .selectSchoolDivRight {
+                width: 365px;
+                height: 380px;
+                overflow: hidden;
+                float: left;
+                img {
+                    float: left;
+                    width: 365px;
+                    height: 182px;
+                    margin-bottom: 16px;
+                }
+
+            }
+        }
+        .selectSchoolListDiv {
+            padding-bottom: 50px;
+            .clear {
+                clear: both;
+            }
+            .searchResultDiv {
+                overflow: hidden;
+                margin: 10px 0 20px 0;
+                p {
+                    color: #666;
+                    font-size: 12px;
+                    span {
+                        font-size: 16px;
+                        color: #333;
+                        border-left: 3px solid #1677ff;
+                        font-weight: bold;
+                        margin-right: 30px;
+                        padding-left:5px;
+                    }
+                    i {
+                        color: #EB9400;
+                    }
+                }
+                .moreBtn {
+                    float: right;
+                    color: #888;
+                    cursor: pointer;
+                    &:hover {
+                        color: #555;
+                    }
+                }
+            }
+            .searchResultListDiv {
+                width: 1000px;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    background-color: #E6F4FF;
+                }
+                .searchResultListItem {
+                    padding: 25px;
+                    overflow: hidden;
+                    flex: 1;
+                    display: flex;
+                    .searchThisAddressIcon {
+                        color: #FFB44D;
+                        font-size: 18px; 
+                        float: left; 
+                        margin-right: 5px;
+                    }
+                    dl {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        dt {
+                            float: left;
+                            width: 105px;
+                            height: 105px;
+                            margin-right: 50px;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        dd {
+                            float: left;
+                            overflow: hidden;
+                            flex: 1;
+                            h2 {
+                                color: #333;
+                                font-size: 32px;
+                                span {
+                                    margin-left: 20px;
+                                    font-size: 15px;
+                                    color: #EB9400;
+                                    display: inline-block;
+                                    overflow: hidden;
+                                    line-height: 24px;
+                                    img {
+                                        float: left;
+                                        height: 22px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                            p {
+                                color: #555;
+                                > span {
+                                    color: #888
+                                }
+                            }
+                        }
+                        .offerMoreBtnDiv {
+                            flex: initial;
+                            width: 100px;
+                            float: right;
+                            display: flex;
+                            margin-right: 70px;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            font-size: 12px;
+                            .yhqBtn {
+                                background: linear-gradient(180deg, #FFD8A2 0%, #FFB44D 100%);
+                                width: 100px;
+                                height: 32px;
+                                line-height: 32px;
+                                text-align: center;
+                                color: #333;
+                                cursor: pointer;
+                                margin-bottom: 10px;
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+                            button {
+                                width: 100px;
+                                border-radius: 0;
+                                margin-bottom: 10px;
+                                font-size: 12px;
+                                border: 1px solid #d9d9d9;
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .selectSchoolListDivLeft {
+                width: 1000px;
+                float: left;
+                margin-right: 35px;
+            }
+            .selectSchoolListDivRight {
+                float: left;
+                width: 365px;
+                .searchResultItemDiv {
+                    dl {
+                        height: 110px;
+                        margin-bottom: 20px;
+                        overflow: hidden;
+                        dt {
+                            float: left;
+                            width: 200px;
+                            height: 110px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        dd {
+                            float: left;
+                            width: 150px;
+                            height: 110px;
+                            margin-left: 15px;
+                            h5 {
+                                font-size: 16px;
+                                height: 45px;
+                                overflow: hidden;
+                                margin: 5px 0;
+                                &:hover {
+                                    color: #000;
+                                    cursor: pointer;
+                                }
+                            }
+                            p {
+                                color: #666;
+                                font-size: 14px;
+                                margin: 7px 0px;
+                                span {
+                                    color: #EB9400;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+                .searchHotNewsDiv {
+                    padding: 24px 16px;
+                    height: 400px;
+                    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.06);
+                    ul {
+                        li {
+                            color: #666;
+                            font-size: 16px;
+                            border-bottom: 1px dashed #dedede;
+                            padding-bottom: 20px;
+                            margin-bottom: 20px;
+                            width: 333px;
+                            overflow: hidden;
+                            text-overflow:ellipsis;
+                            white-space:nowrap;
+                            cursor: pointer;
+                            &:hover {
+                                color: #333;
+
+                            }
+                            span {
+                                display: inline-block;
+                                text-align: center;
+                                line-height: 25px;;
+                                color: #fff;
+                                margin-right: 5px;
+                                width: 25px;
+                                height: 25px;
+                                background: #D6D6D6;
+                                border-radius: 2px 2px 2px 2px;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .comparedDiv {
+            background-color: #69B1FF;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+        }
+    }
+}

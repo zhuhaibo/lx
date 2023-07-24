@@ -1,0 +1,470 @@
+.brandAgencyDiv {
+    text-align: left;
+    .brandAgencyBanner {
+        height: 420px;
+        background: url(../../assets/images/brandAgencyBanner.png) no-repeat center center;
+        background-size: 100%;
+        .brandAgencyBannerDiv {
+            height: 420px;
+            display: flex;
+            align-items: center;
+        }
+        .brandAgencyBannerLeft {
+            width: 250px;
+            height: 250px;
+            background: url(../../assets/images/gjjy.png) no-repeat 0px 0px;
+            margin-left: 50px;
+        }
+        .brandAgencyBannerRight {
+            flex: 1;
+            margin-left: 40px;
+            text-align: left;
+            .bannerTextDiv {
+                overflow: hidden;
+                .bannerText {
+                    font-size: 50px;
+                    color: #000;
+                    float: left;
+                    margin-right: 10px;
+                    font-weight: bold;
+                }
+                .bannerTextIcon {
+                    float: left;
+                    background: url(../../assets/images/bannerTextIcon.png) no-repeat 0 0;
+                    width: 80px;
+                    height: 28px;
+                }
+            }
+            ul {
+                margin-top: 40px;
+                overflow: hidden;
+                li {
+                    float: left;
+                    color: #FFF;
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-right: 30px;
+                    overflow: hidden;
+                    .bticon {
+                        width: 40px;
+                        height: 30px;
+                        float: left;
+                        padding-right: 5px;
+                    }
+                    .bti01 { background: url(../../assets/images/bti01.png) no-repeat center center; }
+                    .bti02 { background: url(../../assets/images/bti02.png) no-repeat center center; }
+                    .bti03 { background: url(../../assets/images/bti03.png) no-repeat center center; }
+                    .bti04 { background: url(../../assets/images/bti04.png) no-repeat center center; }
+                }
+            }
+        }
+    }
+    .BrandAgencySearchDiv {
+        margin: 30px 0 10px 0;
+        overflow: hidden;
+        height: 320px;
+        border-bottom: 1px solid #BCBCBC;
+        padding-bottom: 32px;
+        .BrandAgencySearchDivLeft {
+            height: 320px;
+            width: 1000px;
+            float: left;
+            margin-right: 35px;
+            .mbxDiv {
+                margin-bottom: 30px;
+                .searchThisAddressIcon {
+                    color: #FFB44D;
+                    font-size: 18px; 
+                    float: left; 
+                    margin-right: 10px;
+                    margin-top: 2px;
+                }
+            }
+            .BrandAgencySearch {
+                .searchItem {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                    .hotSchoolTbsDiv {
+                        float: left;
+                        overflow: hidden;
+                        strong {
+                            width: 60px;
+                            float: left;
+                            margin-right: 20px;
+                        }
+                        ul {
+                            width: 890px;
+                            float: left;
+                            overflow: hidden;
+                            li {
+                                float: left;
+                                margin-right: 10px;
+                                border: 1px solid #FFF;
+                                font-size: 12px;
+                                padding: 2px 8px;
+                                border-radius: 10px;
+                                margin-bottom: 5px;
+                                &:hover {
+                                    color: #1677ff;
+                                    cursor: pointer;
+                                }
+                            }
+                            li.active {
+                                border: 1px solid #1677ff;
+                                color: #1677ff;
+                            }
+                            li.emptyBtn {
+                                color: #FFF;
+                                border: 0;
+                                background: linear-gradient(180deg, #91CAFF 0%, #4096FF 100%);
+                                padding: 3px 15px;
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                        :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper {
+                            border:0;
+                            border-radius: 10px;;
+                            height: 24px;
+                            line-height: 24px;
+                            padding-inline: 8px;
+                            margin-right: 10px;
+                            font-size: 12px;
+                            color: #666;
+                            margin-bottom: 5px
+                        }
+                        :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper:hover {
+                            color: #1677ff;
+                        }
+                        :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper:not(:first-child)::before {
+                            background: none;
+                        }
+                        .ant-radio-group-solid :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+                            background-color: #FFF;
+                            border: 1px solid #1677ff;
+                            color:#1677ff;
+                            line-height: 22px;
+                        }
+                        .ant-radio-group-solid :where(.css-dev-only-do-not-override-zjzpde).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+                            // color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .BrandAgencySearchDivRight {
+            height: 320px;
+            width: 305px;
+            float: left;
+            background-color: #ffb435;
+            padding: 0 30px;
+            .basdTitle {
+                text-align: center;
+                font-size: 18px;
+                color: #333;
+                font-weight: bold;
+                margin: 20px 0 10px 0;
+                strong {
+                    color: #fff;
+                    font-size: 40px;
+                    margin-right: 5px;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #B47100;
+                }
+            }
+            .basdForm {
+                overflow: hidden;
+                li {
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    input {
+                        width: 135px;
+                        float: left;
+                        height: 34px;
+                        color: #666;
+                        outline: none;
+                        padding: 0 5px;
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                    .basdBtn {
+                        color: #333;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: center;
+                        width: 300px;
+                        height: 38px;
+                        line-height: 38px;
+                        background: linear-gradient(180deg, #FFE0B5 0%, #EB9400 100%);
+                        border-radius: 35px 35px 35px 35px;
+                        opacity: 1;
+                    }
+                    p {
+                        color: #fff;
+                        font-weight: 500;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .BrandAgencySearchListDiv {
+        padding-bottom: 50px;
+        .clear {
+            clear: both;
+        }
+        .searchResultDiv {
+            overflow: hidden;
+            margin: 10px 0 20px 0;
+            p {
+                color: #666;
+                font-size: 12px;
+                span {
+                    font-size: 16px;
+                    color: #333;
+                    border-left: 3px solid #1677ff;
+                    font-weight: bold;
+                    margin-right: 30px;
+                    padding-left:5px;
+                }
+                i {
+                    color: #EB9400;
+                }
+            }
+            .moreBtn {
+                float: right;
+                color: #888;
+                cursor: pointer;
+                &:hover {
+                    color: #555;
+                }
+            }
+        }
+        .searchResultListDiv {
+            width: 1000px;
+            height: 250px;
+            &:hover {
+                background-color: #E6F4FF;
+            }
+            .searchResultListItem {
+                padding: 25px;
+                overflow: hidden;
+                margin-bottom: 30px;
+                &:hover {
+                    dl>dt>img {
+                        transform: scale(1.2, 1.2);
+                        transition: 0.5s;
+                    }
+                }
+                dl {
+                    dt {
+                        float: left;
+                        width: 280px;
+                        height: 200px;
+                        margin-right: 50px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            transition: 0.5s;
+                            &:hover {
+                                transition: all 0.5s ease 0s;
+                            }
+                        }
+                    }
+                    dd {
+                        float: left;
+                        height: 200px;
+                        overflow: hidden;
+                        h2 {
+                            color: #333;
+                            font-size: 32px;
+                            margin-bottom: 10px;
+                            span {
+                                margin-left: 20px;
+                                font-size: 15px;
+                                color: #EB9400;
+                                display: inline-block;
+                                overflow: hidden;
+                                line-height: 24px;
+                                img {
+                                    float: left;
+                                    height: 22px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        .offertext {
+                            color: #333;
+                            font-size: 12px;
+                            font-weight: bold;
+                            overflow: hidden;
+                            margin-bottom: 20px;
+                            > div {
+                                float: left;
+                                margin-right: 30px;
+                                i {
+                                    font-style: normal;
+                                    color: #888;
+                                }
+                                .szzxDiv {
+                                    overflow: hidden;
+                                    > span {
+                                        padding-right: 10px;
+                                        margin-right: 10px;
+                                        border-right: 1px solid #ccc;
+                                        overflow: hidden;
+                                        display: inline-block;
+                                        float: left;
+                                        > img {
+                                            float: left;
+                                            margin-right: 5px;
+                                        }
+                                        &:last-child{
+                                            border: 0;
+                                        }
+                                        i {
+                                            font-style: normal;
+                                            color: #888;
+                                        }
+                                    }
+                                }
+                            }
+                            .offerRate {
+                                color: #FF723F;
+                            }
+                        }
+                    }
+                    .offerMoreBtnDiv {
+                        width: 100px;
+                        float: right;
+                        display: flex;
+                        margin-right: 70px;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        height: 200px;
+                        .yhqBtn {
+                            background: url(../../assets/images/youhuiquan.png) no-repeat 0 0;
+                            width: 100px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            color: #555;
+                            cursor: pointer;
+                            span {
+                                margin-left: 10px;
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                        button {
+                            width: 100px;
+                            border-radius: 0;
+                            margin-bottom: 10px;
+                            color: #EB9400;
+                            border: 1px solid #EB9400;
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .BrandAgencySearchListDivLeft {
+            width: 1000px;
+            float: left;
+            margin-right: 35px;
+        }
+        .BrandAgencySearchListDivRight {
+            float: left;
+            width: 365px;
+            .searchResultItemDiv {
+                dl {
+                    height: 110px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    dt {
+                        float: left;
+                        width: 200px;
+                        height: 110px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    dd {
+                        float: left;
+                        width: 150px;
+                        height: 110px;
+                        margin-left: 15px;
+                        h5 {
+                            font-size: 16px;
+                            height: 45px;
+                            overflow: hidden;
+                            margin: 5px 0;
+                            &:hover {
+                                color: #000;
+                                cursor: pointer;
+                            }
+                        }
+                        p {
+                            color: #666;
+                            font-size: 14px;
+                            margin: 7px 0px;
+                            span {
+                                color: #EB9400;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+            .searchHotNewsDiv {
+                padding: 24px 16px;
+                height: 400px;
+                box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.06);
+                ul {
+                    li {
+                        color: #666;
+                        font-size: 16px;
+                        border-bottom: 1px dashed #dedede;
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                        width: 333px;
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        white-space:nowrap;
+                        cursor: pointer;
+                        &:hover {
+                            color: #333;
+
+                        }
+                        span {
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 25px;;
+                            color: #fff;
+                            margin-right: 5px;
+                            width: 25px;
+                            height: 25px;
+                            background: #D6D6D6;
+                            border-radius: 2px 2px 2px 2px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

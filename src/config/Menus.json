@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "name": "首页",
+        "path": "home",
+        "icon": "",
+        "code": "m:home"
+    },
+    {
+        "id": "2",
+        "name": "找品牌机构",
+        "path": "brandAgency",
+        "icon": "",
+        "code": "m:brandAgency"
+    },
+    {
+        "id": "3",
+        "name": "选学校",
+        "path": "selectSchool",
+        "icon": "",
+        "code": "m:selectSchool"
+    },
+    {
+        "id": "4",
+        "name": "找专业",
+        "path": "33",
+        "icon": "",
+        "code": "m:33"
+    },
+    {
+        "id": "5",
+        "name": "产品/服务",
+        "path": "44",
+        "icon": "",
+        "code": "m:44"
+    },
+    {
+        "id": "6",
+        "name": "录取预估",
+        "path": "55",
+        "icon": "",
+        "code": "m:55"
+    },
+    {
+        "id": "7",
+        "name": "留学情报局",
+        "path": "66",
+        "icon": "",
+        "code": "m:66"
+    }
+]
