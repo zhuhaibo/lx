@@ -11,6 +11,7 @@ export default defineConfig({
     { path: "/brandAgency", component: "brandAgency" },
     { path: "/selectSchool", component: "selectSchool" },
     { path: "/selectSchool/details/:id", component: "selectSchool/Details" },
+    { path: "/intelligence", component: "intelligence" },
   ],
   npmClient: 'yarn',
   hash: true,

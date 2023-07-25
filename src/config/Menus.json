@@ -44,8 +44,8 @@
     {
         "id": "7",
         "name": "留学情报局",
-        "path": "66",
+        "path": "intelligence",
         "icon": "",
-        "code": "m:66"
+        "code": "m:intelligence"
     }
 ]
