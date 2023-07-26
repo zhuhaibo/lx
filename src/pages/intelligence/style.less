@@ -1,5 +1,5 @@
 .intelligenceDiv{
-    width: 1300px;
+    width: 1400px;
     margin: 0 auto;
 
     .nav{
@@ -9,45 +9,136 @@
         cursor: pointer;
     }
 
-    .items{
+
+
+    .left_box{
         width: 1047px;
-        height: 142px;
-        padding: 20px 0 20px 20px;
         float: left;
-        text-align: left;
-        .items_img{
-            width: 220px;
+        margin-top: 10px;
+        .items{
+            width: 1047px;
             height: 142px;
-            margin-right: 20px;
+            padding: 20px 0 20px 20px;
             float: left;
-        }
-        .items_content{
-            width: calc(100% - 250px);
-            float: left;
-            .items_title{
-                font-size: 16px;
-                color: #333333;
+            text-align: left;
+            .items_img{
+                width: 220px;
+                height: 142px;
+                margin-right: 20px;
+                float: left;
             }
-            .items_font{
-                height: 80px;
-                font-size: 14px;
-                margin-top: 10px;
-                color: #666666;
-            }
-            .items_icon{
-                color: #999999;
-                font-size: 13px;
-                margin-top: 10px;
+            .items_content{
+                width: calc(100% - 250px);
+                float: left;
+                .items_title{
+                    font-size: 16px;
+                    color: #333333;
+                }
+                .items_font{
+                    height: 80px;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    color: #666666;
+                    overflow:hidden;
+                    -webkit-line-clamp: 4;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                }
+                .items_icon{
+                    color: #999999;
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
             }
         }
     }
+
+
+
+    .right_box{
+        width: 300px;
+        float: right;
+        margin-top: 10px;
+        .tools{
+            width: 300px;
+            height: 320px;
+            border: 1px solid #D6D6D6;
+            border-radius: 4px 4px 4px 4px;
+            .tools_title{
+                width: 220px;
+                height: 22px;
+                font-size: 16px;
+                color: #333;
+                margin: 10px 0 10px 30px;
+                text-align: left;
+                border-left: 5px solid #FF723F;
+                text-indent: 8px;
+            }
+            .tools_item{
+                width: 100px;
+                margin: 20px 0;
+                float: left;
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+        .hot{
+            .hot_title{
+                width: 220px;
+                height: 22px;
+                font-size: 16px;
+                color: #333;
+                margin: 30px 0 10px 0px;
+                text-align: left;
+                border-left: 5px solid #4096FF;
+                text-indent: 8px;
+            }
+            .hot_items{
+                width: 100%;
+                height: 100px;
+                padding: 20px 0 20px 0;
+                float: left;
+                text-align: left;
+                .hot_img{
+                    width: 140px;
+                    height: 80px;
+                    margin-right: 20px;
+                    float: left;
+                }
+                .hot_content{
+                    float: right;
+                    .hot_font{
+                        width: 140px;
+                        height: 40px;
+                        font-size: 14px;
+                        margin-top: 10px;
+                        color: #666666;
+
+                        overflow:hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                    }
+                    .hot_icon{
+                        color: #999999;
+                        font-size: 13px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+
 
     .clearfloat{
         clear: both;
     }
-
-
-
     .active_nav{
         color: #FFA60F;
     }
