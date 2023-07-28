@@ -1,8 +1,25 @@
 import './details.less'
-import { Col, Row, Divider, Pagination, Tabs, Breadcrumb, Rate } from 'antd';
-import { ClockCircleOutlined, EyeOutlined, HomeOutlined } from '@ant-design/icons';
+import {
+    Col,
+    Row,
+    Breadcrumb,
+    Rate,
+    Button,
+    Table
+} from 'antd';
+import {
+    ClockCircleOutlined,
+    EyeOutlined,
+    HomeOutlined,
+    RightOutlined,
+    DownOutlined,
+    ZoomInOutlined
+} from '@ant-design/icons';
 
 import testImg from '../../assets/images/schoolDatails/banner1.png';
+import testImg1 from '../../assets/images/schoolDatails/img6.png';
+
+
 import icon1 from '../../assets/images/intelligence/icon1.png';
 import icon2 from '../../assets/images/intelligence/icon2.png';
 import icon3 from '../../assets/images/intelligence/icon3.png';
@@ -46,99 +63,23 @@ export default function Index() {
             name: '申请攻略'
         }
     ]
-
-    // 列表数据
-    const dataList = [
-        {
-            id: 1,
-            img: '',
-            time: '2023-01-01',
-            num: 11,
-            title: '英国突发两项留学新政策！针对所有国际生！', 
-            content: '英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！'
-        },
-        {
-            id: 2,
-            img: '',
-            time: '2021-10-23',
-            num: 11,
-            title: '英国突发两项留学新政策！针对所有国际生！', 
-            content: '英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！'
-        },
-        {
-            id: 3,
-            img: '',
-            time: '2021-08-24',
-            num: 11,
-            title: '英国突发两项留学新政策！针对所有国际生！', 
-            content: '英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！英国突发两项留学新政策！针对所有国际生！'
-        },
-    ]
-
-    // 工具箱
-    const tools = [
-        {
-            name: '排名查询',
-            img: icon1
-        },{
-            name: 'GPA计算机',
-            img: icon2
-        },{
-            name: '费用预估',
-            img: icon3
-        },{
-            name: '雅托真题',
-            img: icon4
-        },{
-            name: '中介对比',
-            img: icon5
-        },{
-            name: '面试技巧',
-            img: icon6
-        },{
-            name: '背题活动',
-            img: icon7
-        },{
-            name: '国际课程',
-            img: icon8
-        },{
-            name: '常见100问',
-            img: icon9
-        },
-    ]
-
-    // 热点
-    const hotTabs = [
-        {
-          key: '1',
-          label: `年榜`,
-        },
-        {
-          key: '2',
-          label: `半年榜`,
-        },
-        {
-          key: '3',
-          label: `月榜`,
-        },
-    ]
-
-    // 热点
+    
+    // 排名相近的院校推荐
     const hotList = [
         {
             img: icon1,
-            title: '用于英国签证及移民的雅思考试成绩单重新寄送…',
-            num: 1231,
+            title: '皇家墨尔本理工大学皇家墨尔本理工大学',
+            num: 'Royal Melbourne Institute …',
         },
         {
             img: icon2,
-            title: '关于举办第十九届留学英才招聘会暨国家留学…',
-            num: 253,
+            title: '澳洲国立大学',
+            num: 'Royal Melbourne Institute …Royal Melbourne Institute …',
         },
         {
             img: icon3,
-            title: '托福考试攻略_出国留学_中国教育在线',
-            num: 123,
+            title: '南澳大学',
+            num: 'Royal Melbourne Institute …',
         },
     ]
 
@@ -160,13 +101,73 @@ export default function Index() {
         },
     ]
 
+    // 表格
+    const columns = [
+        {
+          title: '姓名',
+          dataIndex: 'name',
+          key: 'name',
+        },
+        {
+          title: '年龄',
+          dataIndex: 'age',
+          key: 'age',
+        },
+        {
+          title: '住址',
+          dataIndex: 'address',
+          key: 'address',
+        },
+    ]
 
+    // 表格
+    const dataSource = [
+        {
+          key: '1',
+          name: '胡彦斌',
+          age: 32,
+          address: '西湖区湖底公园1号',
+        },
+        {
+          key: '2',
+          name: '胡彦祖',
+          age: 42,
+          address: '西湖区湖底公园1号',
+        },
+    ]
 
-    const onChange = (key: number) => {
-        currentHot = key
-        console.log(currentHot, 'currentHot')
-    }
+    // 学院风景
+    const schoolList = [
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+        {
+            url: testImg
+        },
+    ]
 
+      
     return (
         <div className="schoolDatailsDIv">
 
@@ -215,15 +216,8 @@ export default function Index() {
                         <p>2023</p>
 
                     </div>
-
-
                 </div>
-
-               
-
-
             </div>
-
 
 
 
@@ -232,80 +226,138 @@ export default function Index() {
                     <Row gutter={16} className="nav_row">
                         { 
                             navList?.map((item: any, index: any)=>{ 
-                                return  <Col span={3} key={index} className={activeIndex === index ? 'active' : null}>{item.name}</Col>
+                                return  <Col span={3} key={index} className={activeIndex === index ? 'active_nav' : 'nav_style'}>{item.name}</Col>
                             }) 
                         }
                     </Row>
                 </div>
-                
             </div>
 
-            <Divider style={{margin: '0px'}} />
 
-            <div className='left_box'>
-                {
-                    dataList?.map((item: any, index: any)=>{
-                        return  <div className='items' key={index}>
-                                    <img src={testImg} alt="" className='items_img'/>
-                                    <div className='items_content'>
-                                        <h3 className='items_title'>{item.title}</h3>
-                                        <p className='items_font'>{item.content}</p>
-                                        <div className='items_icon'>
-                                            <ClockCircleOutlined /> {item.time}
-                                            &nbsp;&nbsp;&nbsp;
-                                            <EyeOutlined /> {item.num} 次
+
+                        
+            <div className='schoolDatails_content'>
+
+                <div className='left_box'>
+                    <h3 className='article_title'>院校简介</h3>
+                    <p className='article_content'>        哈佛大学是位于美国马萨诸塞州波士顿剑桥城的一所私立大学，同时是常春藤盟校成员之一。1636年由马萨诸塞州殖民地立法机关立案成立，迄今已是美国历史最悠久的高等学府，也是北美第一间和最古老的法人机构。该机构在1639年3月13日以一名毕业于英格兰剑桥大学的牧师约翰·哈佛之名，命名为哈佛学院，1780年哈佛学院更名为哈佛大学。哈佛大学是一所在世界上享有一流大学的声誉、财富和影响力的学校，被誉为美国政府的思想库，其商学院案例教学也盛名远播。在世界各报刊以及研究机构的排行榜中，仅次于英国剑桥大学。哈佛</p>
+                    <Button> 展开全部 <DownOutlined /> </Button>
+                    
+                    <h3 className='article_title'>开设专业</h3>
+                    <p className='article_sub_title'>本科生开设专业</p>
+                    <Table dataSource={dataSource} columns={columns} />
+                    <Button> 展开全部 <DownOutlined /> </Button>
+
+                    <p className='article_sub_title'>研究生开设专业</p>
+                    <Table dataSource={dataSource} columns={columns} />
+                    <Button> 展开全部 <DownOutlined /> </Button>
+
+
+                    <h3 className='article_title'>申请条件</h3>
+                    <p className='article_content'>        哈佛大学是位于美国马萨诸塞州波士顿剑桥城的一所私立大学，同时是常春藤盟校成员之一。1636年由马萨诸塞州殖民地立法机关立案成立，迄今已是美国历史最悠久的高等学府，也是北美第一间和最古老的法人机构。该机构在1639年3月13日以一名毕业于英格兰剑桥大学的牧师约翰·哈佛之名，命名为哈佛学院，1780年哈佛学院更名为哈佛大学。哈佛大学是一所在世界上享有一流大学的声誉、财富和影响力的学校，被誉为美国政府的思想库，其商学院案例教学也盛名远播。在世界各报刊以及研究机构的排行榜中，仅次于英国剑桥大学。哈佛</p>
+                    <Button> 展开全部 <DownOutlined /> </Button>
+
+
+                    <h3 className='article_title'>校园风景</h3>
+                    <Row gutter={15}>
+                        {
+                            schoolList?.map((item: any, index: any)=>{
+                                return(
+                                    <Col span={8}>
+                                        <img src={item.url} alt=""  className='school_img' />
+                                        <div className='school_img_model'>
+                                            <ZoomInOutlined style={{fontSize: '40px'}}/>
                                         </div>
-                                    </div>
-                                </div>
-                    })
-                }
-            </div>
+                                    </Col>
+                                )
+                            })
+                        }
+                    </Row>
 
-            <div className='right_box'>
-
-                <div className='tools'>
-                    <h3 className='tools_title'>留学工具箱TOOLS</h3>
-                    {
-                        tools?.map((item: any, index: any)=>{
-                            return  <div className='tools_item' key={index}>
-                                        <img src={item.img} alt="" />
-                                        <div>{item.name}</div>
-                                    </div>
-                        })
-                    }
-                    
-                </div>
-
-
-                <div className='hot'>
-                    <h3 className='hot_title'>热点关注</h3>
-                    <Tabs defaultActiveKey={currentHot} items={hotTabs} onChange={onChange} />
-                    
+                    <h3 className='article_title'>申请攻略</h3>
                     {
                         hotList?.map((item: any, index: any)=>{
-                            return  <div className='hot_items' key={index}>
-                                        <img src={testImg} alt="" className='hot_img'/>
-                                        <div className='hot_content'>
-                                            <p className='hot_font'>{item.title}</p>
-                                            <div className='hot_icon'>
-                                                阅读量: {item.num} 
+                            return  <div className='top_items' key={index}>
+                                        <img src={testImg} alt="" className='top_img'/>
+                                        <div className='top_content'>
+                                            <p className='top_font'>{item.title}</p>
+                                            <div className='top_des'>
+                                                <div style={{float: 'left'}}><ClockCircleOutlined /> 2023-12-09</div>
+                                                <div style={{float: 'right'}}><EyeOutlined /> 99999次</div>
                                             </div>
                                         </div>
                                     </div>
                         })
                     }
+
+
+
+
+                    
+
+
+
+
+                    
+
+
                 </div>
+
+
+
+                <div className='right_box'>
+
+                    <div className='tools'>
+                        <div className='tools_img'></div>
+                        <div className='tools_title'>
+                            <p>我这种情况</p>
+                            <p>能申请上伦敦艺术大学吗？</p>
+                        </div>
+                        <div className='tools_content'>
+                            <p>无论你是国际高中，还是普高；</p>
+                            <p>无论你的背景是985、211，还是普通本科院校；</p>
+                            <p>无论你的语言成绩</p>
+                            <p>GPA成绩、活动背景怎么样；</p>
+                            <p>都会有一份专属你的留学规划方案</p>
+                        </div>
+                        <Button type="primary" shape="round"  size='large' >
+                            免费订制留学方案
+                        </Button>
+
+
+                    </div>
+
+
+                    <div className='top'>
+                        <div className='top_title'>
+                            <p>排名相近的院校推荐</p>
+                            <div>换一批 <RightOutlined /> </div>
+                        </div>
+                        {
+                            hotList?.map((item: any, index: any)=>{
+                                return  <div className='top_items' key={index}>
+                                            <img src={testImg} alt="" className='top_img'/>
+                                            <div className='top_content'>
+                                                <p className='top_font'>{item.title}</p>
+                                                <div className='top_des'>
+                                                    {item.num} 
+                                                </div>
+                                            </div>
+                                        </div>
+                            })
+                        }
+                        
+                    </div>
+                    
                 
-               
+                </div>
             </div>
 
             
-
             
             <div className="clearfloat" >&nbsp;</div>
 
 
-            <Pagination defaultCurrent={1} total={50} />
 
 
         </div>

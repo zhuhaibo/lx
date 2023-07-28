@@ -158,7 +158,7 @@ export default function Index() {
             <Row gutter={16} className="nav">
                 { 
                     navList?.map((item: any, index: any)=>{ 
-                        return  <Col span={3} key={index} className={activeIndex === index ? 'active' : null}>{item.name}</Col>
+                        return  <Col span={3} key={index} className={activeIndex === index ? 'active_nav' : null}>{item.name}</Col>
                     }) 
                 }
             </Row>

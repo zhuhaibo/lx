@@ -4,12 +4,12 @@
 
     .schoolDatails_banner{
         width: 100%;
-        min-height: 445px;
+        min-height: 400px;
         background: url(../../assets/images/schoolDatails/banner1.png) no-repeat;
         background-size: 100%;
         .banner_content{
             width: 1400px;
-            min-height: 445px;
+            min-height: 400px;
             margin: 0 auto;
             color: #fff !important;
             .banner_school{
@@ -128,123 +128,179 @@
     }
 
 
-
-    .left_box{
-        width: 1047px;
-        float: left;
-        margin-top: 10px;
-        .items{
+    .schoolDatails_content{
+        width: 1400px;
+        min-height: 500px;
+        margin: 0 auto;
+        .left_box{
             width: 1047px;
-            height: 142px;
-            padding: 20px 0 20px 20px;
             float: left;
+            margin-top: 20px;
             text-align: left;
-            .items_img{
-                width: 220px;
-                height: 142px;
-                margin-right: 20px;
-                float: left;
+            .article_title{
+                font-size: 24px;
+                font-weight: 500;
+                color: #333;
+                margin: 40px 0 10px 0px;
+                border-left: 5px solid #FF723F;
+                text-indent: 8px;
             }
-            .items_content{
-                width: calc(100% - 250px);
+            .article_sub_title{
+                color: #333333;
+                font-size: 18px;
+                font-weight: 500;
+                margin: 30px 0;
+            }
+            .article_content{
+                min-height: 350px;
+            }
+            .school_img{
+                width: 340px;
+                height: 220px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            // .school_img:hover{
+            //     display: block;
+            // }
+            .school_img_model{
+                width: 340px;
+                height: 220px;
+                text-align: center;
+                line-height: 220px;
+                margin-top: 10px;
+                // display: none;
+                cursor: pointer;
+                background: rgba(0, 0, 0, 0.6);
+                position: absolute;
+                top: 0px;
+                left: 8px;
+            }
+            .top_items{
+                width: 487px;
+                height: 105px;
+                padding: 20px 0 20px 0px;
                 float: left;
-                .items_title{
-                    font-size: 16px;
-                    color: #333333;
+                text-align: left;
+                margin-right: 30px;
+                border-bottom: 1px solid #D6D6D6;
+                .top_img{
+                    width: 140px;
+                    height: 105px;
+                    margin-right: 20px;
+                    float: left;
                 }
-                .items_font{
-                    height: 80px;
-                    font-size: 14px;
-                    margin-top: 10px;
-                    color: #666666;
-                    overflow:hidden;
-                    -webkit-line-clamp: 4;
-                    text-overflow: ellipsis;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                }
-                .items_icon{
-                    color: #999999;
-                    font-size: 13px;
-                    margin-top: 10px;
+                .top_content{
+                    float: left;
+                    width: calc(100% - 180px);
+                    .top_font{
+                        width: 100%;
+                        height: 50px;
+                        font-size: 18px;
+                        margin-top: 15px;
+                        color: #333333;
+                        font-weight: 500;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .top_des{
+                        color: #999999;
+                        font-size: 13px;
+                        margin-top: 15px;
+                    }
                 }
             }
         }
     }
 
+   
+
 
 
     .right_box{
-        width: 300px;
+        width: 320px;
         float: right;
         margin-top: 10px;
         .tools{
-            width: 300px;
-            height: 320px;
+            width: 320px;
+            height: 420px;
             border: 1px solid #D6D6D6;
             border-radius: 4px 4px 4px 4px;
-            .tools_title{
-                width: 220px;
-                height: 22px;
-                font-size: 16px;
-                color: #333;
-                margin: 10px 0 10px 30px;
-                text-align: left;
-                border-left: 5px solid #FF723F;
-                text-indent: 8px;
+            margin-top: 20px;
+            .tools_img{
+                width: 320px;
+                height: 144px;
+                background: url(../../assets/images/schoolDatails/banner1.png) no-repeat;
+                background-size: 100% 100%;
             }
-            .tools_item{
-                width: 100px;
+            .tools_title{
+                width: 100%;
                 margin: 20px 0;
-                float: left;
-                img{
-                    width: 25px;
-                    height: 25px;
+                font-size: 18px;
+                font-weight: 500;
+                color: #1677FF;
+                p{
+                    text-align: left;
+                    text-indent: 20px;
+                }
+            }
+            .tools_content{
+                margin-bottom: 20px;
+                p{
+                    text-align: left;
+                    text-indent: 20px;
+                    margin-top: 2px;
                 }
             }
         }
-        .hot{
-            .hot_title{
-                width: 220px;
+        .top{
+            .top_title{
                 height: 22px;
                 font-size: 16px;
+                font-weight: 500;
                 color: #333;
                 margin: 30px 0 10px 0px;
-                text-align: left;
                 border-left: 5px solid #4096FF;
                 text-indent: 8px;
+                p{
+                    float: left;
+                }
+                div{
+                    float: right; 
+                    font-size: 14px;
+                    color: #AAAAAA;
+                }
             }
-            .hot_items{
+            .top_items{
                 width: 100%;
                 height: 100px;
-                padding: 20px 0 20px 0;
+                padding: 20px 0 0px 10px;
                 float: left;
                 text-align: left;
-                .hot_img{
-                    width: 140px;
+                border-bottom: 1px solid #D6D6D6;
+                .top_img{
+                    width: 80px;
                     height: 80px;
                     margin-right: 20px;
                     float: left;
                 }
-                .hot_content{
-                    float: right;
-                    .hot_font{
-                        width: 140px;
-                        height: 40px;
-                        font-size: 14px;
+                .top_content{
+                    float: left;
+                    width: calc(100% - 110px);
+                    .top_font{
+                        width: 100%;
+                        height: 28px;
+                        font-size: 18px;
                         margin-top: 10px;
-                        color: #666666;
-
-                        overflow:hidden;
+                        color: #333333;
+                        font-weight: 500;
+                        overflow: hidden;
                         text-overflow: ellipsis;
-                        -webkit-line-clamp: 2;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
                     }
-                    .hot_icon{
+                    .top_des{
                         color: #999999;
                         font-size: 13px;
-                        margin-top: 10px;
+                        margin-top: 4px;
                     }
                 }
             }
@@ -253,12 +309,18 @@
     }
 
 
-
+    .nav_style{
+        font-size: 18px;
+        font-weight: 500;
+    }
     .clearfloat{
         clear: both;
     }
     .active_nav{
+        background: #fff;
         color: #FFA60F;
+        font-size: 18px;
+        font-weight: 500;
     }
     .items:hover{
         background-color: #E6F4FF;
